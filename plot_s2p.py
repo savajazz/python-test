@@ -30,3 +30,7 @@ xlabel('f [GHz]')
 ylabel('S11 [dB]')
 xlim(numpy.min(freqs_array)/1e9, numpy.max(freqs_array)/1e9)
 show()
+
+# This is just a test comment to see how GitHub desktop works
+
+# And this is just another comment
