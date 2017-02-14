@@ -18,3 +18,15 @@ pylab.show()
 
 network.plot_s_db(m=0, n=0)
 pylab.show()
+
+S11 = network.s_db[:,1,1]
+freqs = network.frequency.f_scaled
+
+freqs_array = numpy.array(freqs)
+S11_array = numpy.array(S11)
+
+plot(freqs_array/1e9, S11_array, marker='o')
+xlabel('f [GHz]')
+ylabel('S11 [dB]')
+xlim(numpy.min(freqs_array)/1e9, numpy.max(freqs_array)/1e9)
+show()
